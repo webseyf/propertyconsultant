@@ -43,7 +43,7 @@ export default function ServiceDetailLayout({ service, disclaimerText }: Service
       {/* Main Content Layout */}
       <section className="section section-bg-white">
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: '2fr 1fr', gap: '48px', alignItems: 'start' }}>
+          <div className="split-layout-detail">
             {/* Left Column: Detailed Service Information */}
             <div>
               <div style={{ marginBottom: '36px' }}>
@@ -93,8 +93,8 @@ export default function ServiceDetailLayout({ service, disclaimerText }: Service
               </div>
 
               {/* Target Audience & Deliverables Grid */}
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '24px', marginBottom: '48px' }}>
-                <div style={{ backgroundColor: 'var(--color-bg-offwhite)', padding: '28px', borderRadius: 'var(--radius-lg)', border: '1px solid var(--color-border-light)' }}>
+              <div className="split-layout-card-grid" style={{ marginBottom: '48px' }}>
+                <div style={{ backgroundColor: 'var(--color-bg-offwhite)', padding: '24px 20px', borderRadius: 'var(--radius-lg)', border: '1px solid var(--color-border-light)' }}>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '16px' }}>
                     <Users size={18} style={{ color: 'var(--color-accent-gold)' }} />
                     <h4 style={{ fontSize: '1.15rem', color: 'var(--color-primary-navy)', margin: 0 }}>
@@ -111,7 +111,7 @@ export default function ServiceDetailLayout({ service, disclaimerText }: Service
                   </ul>
                 </div>
 
-                <div style={{ backgroundColor: 'var(--color-bg-offwhite)', padding: '28px', borderRadius: 'var(--radius-lg)', border: '1px solid var(--color-border-light)' }}>
+                <div style={{ backgroundColor: 'var(--color-bg-offwhite)', padding: '24px 20px', borderRadius: 'var(--radius-lg)', border: '1px solid var(--color-border-light)' }}>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '16px' }}>
                     <FileText size={18} style={{ color: 'var(--color-accent-gold)' }} />
                     <h4 style={{ fontSize: '1.15rem', color: 'var(--color-primary-navy)', margin: 0 }}>

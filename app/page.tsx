@@ -110,7 +110,7 @@ export default function HomePage() {
       {/* SECTION 2: COMPANY INTRODUCTION */}
       <section className="section section-bg-white">
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '56px', alignItems: 'center' }}>
+          <div className="split-layout-2col">
             <div>
               <div className="section-eyebrow">
                 <Info size={14} />

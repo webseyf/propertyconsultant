@@ -43,7 +43,7 @@ export default function AboutPage() {
       {/* Main Narrative Section */}
       <section className="section section-bg-white">
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: '1.1fr 0.9fr', gap: '48px', alignItems: 'center' }}>
+          <div className="split-layout-narrative">
             <div>
               <div className="section-eyebrow">
                 <Building2 size={14} />
