@@ -24,8 +24,8 @@ export const COMPANY_INFO = {
   phoneSecondary: "+251 0991738621",
   phonePrimaryRaw: "+251913006754",
   phoneSecondaryRaw: "+251991738621",
-  whatsappNumber: "+251913006754", // Subject to owner confirmation
-  whatsappUrl: "https://wa.me/251913006754",
+  whatsappNumber: "+251 944320977",
+  whatsappUrl: "https://wa.me/251944320977",
   email: "leadvaluation3@gmail.com",
   telegramUrl: "https://t.me/leadvaluation",
   facebookUrl: "https://www.facebook.com/profile.leadpvet?id=61572300734234&mibextid=ZbWKwL",

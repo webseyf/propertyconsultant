@@ -41,7 +41,7 @@
 2. **Mandatory Floating Actions & Mobile Bar**:
    - **Desktop:** Floating WhatsApp and Call buttons in the lower-right corner.
    - **Mobile:** Fixed bottom contact bar with labeled "WhatsApp" and "Call" buttons respecting safe-area insets.
-   - Direct dialers (`tel:+251913006754`, `tel:+251991738621`) and direct WhatsApp link (`https://wa.me/251913006754`).
+   - Direct dialers (`tel:+251913006754`, `tel:+251991738621`) and direct WhatsApp link (`https://wa.me/251944320977` / `+251 944320977`).
 
 3. **Backend Contact API with Spam Protection**:
    - Route: `/api/contact`

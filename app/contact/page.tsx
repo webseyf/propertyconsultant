@@ -105,16 +105,19 @@ export default function ContactPage() {
                   <div>
                     <h3 className="contact-card-title">Direct WhatsApp</h3>
                     <p className="contact-card-text">
-                      Chat directly with our advisory coordinators:{' '}
+                      Primary WhatsApp:{' '}
                       <a 
                         href={COMPANY_INFO.whatsappUrl} 
                         target="_blank" 
                         rel="noopener noreferrer" 
                         style={{ fontWeight: 600, color: '#16A34A' }}
                       >
-                        Open WhatsApp Chat &rarr;
+                        {COMPANY_INFO.whatsappNumber} &rarr;
                       </a>
                     </p>
+                    <span style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)', display: 'block', marginTop: '4px' }}>
+                      Click to chat directly with our advisory team on WhatsApp.
+                    </span>
                   </div>
                 </div>
 
