@@ -126,7 +126,7 @@ export default function HomePage() {
                 Our firm unites certified Real Property Valuers, Professional Engineers, Economists, and Business Analysts. By combining internationally recognized valuation methodologies with deep expertise in Ethiopia’s regulatory, municipal, and financial frameworks, we deliver reports characterized by technical accuracy, transparency, and ethical diligence.
               </p>
 
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px', marginBottom: '32px' }}>
+              <div className="intro-check-grid">
                 <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
                   <CheckCircle size={18} style={{ color: 'var(--color-accent-gold)', flexShrink: 0 }} />
                   <span style={{ fontSize: '0.925rem', fontWeight: 600 }}>Multidisciplinary Expertise</span>
@@ -145,7 +145,7 @@ export default function HomePage() {
                 </div>
               </div>
 
-              <div style={{ display: 'flex', gap: '16px', alignItems: 'center' }}>
+              <div className="intro-button-group">
                 <Link href="/about" className="btn btn-primary">
                   Learn More About Us <ArrowRight size={16} />
                 </Link>
@@ -218,9 +218,10 @@ export default function HomePage() {
             ))}
           </div>
 
-          <div style={{ textAlign: 'center', marginTop: '48px' }}>
-            <Link href="/services" className="btn btn-primary btn-lg">
-              View All Comprehensive Valuation Services <ArrowRight size={18} />
+          <div className="view-all-services-wrap">
+            <Link href="/services" className="btn btn-primary btn-lg view-all-services-btn">
+              <span>View All Valuation Services</span>
+              <ArrowRight size={18} />
             </Link>
           </div>
         </div>
@@ -364,7 +365,7 @@ export default function HomePage() {
                   <strong>Notice for Site Review:</strong> On the previous website version, the General Manager's name was referenced as both &ldquo;Engineer Hlina Legesse&rdquo; and &ldquo;Engineer Hilina Legesse.&rdquo; This has been highlighted for formal confirmation.
                 </div>
 
-                <div style={{ display: 'flex', gap: '14px', flexWrap: 'wrap' }}>
+                <div className="leadership-btn-group">
                   <Link href="/about" className="btn btn-primary btn-sm">
                     Read Leadership Profile
                   </Link>
@@ -394,17 +395,11 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '32px' }}>
+          <div className="values-grid">
             {CORE_VALUES.map((val, idx) => (
               <div 
                 key={idx} 
-                style={{
-                  backgroundColor: 'var(--color-bg-white)',
-                  border: '1px solid var(--color-border-light)',
-                  borderRadius: 'var(--radius-lg)',
-                  padding: '36px 30px',
-                  boxShadow: 'var(--shadow-sm)'
-                }}
+                className="value-card"
               >
                 <div style={{ width: '48px', height: '48px', borderRadius: 'var(--radius-md)', backgroundColor: 'var(--color-accent-gold-light)', color: 'var(--color-primary-navy)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '20px' }}>
                   <ShieldCheck size={24} />
@@ -437,7 +432,7 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px' }}>
+          <div className="standards-grid">
             <div style={{ background: 'var(--color-bg-white)', padding: '28px', borderRadius: 'var(--radius-lg)', border: '1px solid var(--color-border-light)' }}>
               <h4 style={{ color: 'var(--color-primary-navy)', marginBottom: '12px' }}>Certified Valuers</h4>
               <p style={{ color: 'var(--color-text-muted)', fontSize: '0.925rem', lineHeight: '1.6', margin: 0 }}>
